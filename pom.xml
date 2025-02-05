@@ -8,11 +8,11 @@
 		<version>3.4.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.mls.spring</groupId>
-	<artifactId>Task-manager-microservices</artifactId>
+	<groupId>com.service.microservices</groupId>
+	<artifactId>microservices</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Task-manager-microservices</name>
-	<description>Task Manager Microservices</description>
+	<name>microservices</name>
+	<description>Spring Boot microservices</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -27,6 +27,13 @@
 		<url/>
 	</scm>
 	<packaging>pom</packaging>
+	<modules>
+		<module> gateway-service</module>
+		<module> task-service</module>
+		<module> user-service</module>
+		<module> eureka-service</module>
+		<module> config-service</module>
+	</modules>
 	<properties>
 		<java.version>21</java.version>
 	</properties>

@@ -3,16 +3,15 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.2</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<groupId>com.service.microservices</groupId>
+		<artifactId>microservices</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.mls.spring</groupId>
-	<artifactId>Task-manager-microservices</artifactId>
+	<groupId>com.service.task</groupId>
+	<artifactId>task-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Task-manager-microservices</name>
-	<description>Task Manager Microservices</description>
+	<name>task-service</name>
+	<description>Spring Boot service task</description>
 	<url/>
 	<licenses>
 		<license/>
