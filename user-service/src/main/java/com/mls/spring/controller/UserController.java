@@ -1,5 +1,6 @@
 package com.mls.spring.controller;
 
+import com.mls.spring.http.response.TaskByUserResponse;
 import com.mls.spring.model.UserEntity;
 import com.mls.spring.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +23,13 @@ public class UserController {
     }
 
     @GetMapping("/list-users")
-    public List<UserEntity> listUsers(){
-        return userService.listUsers();
+    public ResponseEntity<List<UserEntity>>  listUsers(){
+        return ResponseEntity.ok(userService.listUsers()) ;
+    }
+
+    @GetMapping("/find-tasks-by-userId/{userId}")
+    public ResponseEntity<TaskByUserResponse> findTasksByUserId (@PathVariable Long userId) {
+        return ResponseEntity.ok(userService.taskByUserId(userId));
     }
 
 }

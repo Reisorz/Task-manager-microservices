@@ -3,6 +3,7 @@ package com.mls.spring.service;
 import com.mls.spring.model.TaskEntity;
 import com.mls.spring.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.config.Task;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,5 +20,9 @@ public class TaskService {
 
     public List<TaskEntity> listTasks() {
         return taskRepository.findAll();
+    }
+
+    public List<TaskEntity> findByUserId(Long userId) {
+        return taskRepository.findByUserId(userId);
     }
 }
